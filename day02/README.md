@@ -6,8 +6,8 @@ I picked two students from the course's `STUDENTS.md` list whose web site reposi
 did not yet have 2 issues, looked at their sites, and opened an issue with comments
 (praise + suggestions) on each:
 
-- Keren Eden – https://kereneden.github.io/ – issue: <!-- TODO: link -->
-- Liora Meyer – https://lioramey.github.io/ – issue: <!-- TODO: link -->
+- Michal Azimov – https://michal-azimov.github.io/ – issue: https://github.com/Michal-azimov/Michal-azimov.github.io/issues/1
+- <!-- TODO: second student – site – issue link -->
 
 I also replied to issues opened on my own repository
 ([delfip.github.io](https://github.com/delfip/delfip.github.io/issues)), and closed them
