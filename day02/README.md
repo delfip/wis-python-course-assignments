@@ -7,7 +7,7 @@ did not yet have 2 issues, looked at their sites, and opened an issue with comme
 (praise + suggestions) on each:
 
 - Michal Azimov – https://michal-azimov.github.io/ – issue: https://github.com/Michal-azimov/Michal-azimov.github.io/issues/1
-- <!-- TODO: second student – site – issue link -->
+- Keren Eden – https://kereneden.github.io/ – issue: https://github.com/KerenEden/KerenEden.github.io/issues/1
 
 I also replied to issues opened on my own repository
 ([delfip.github.io](https://github.com/delfip/delfip.github.io/issues)), and closed them
