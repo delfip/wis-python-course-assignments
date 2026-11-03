@@ -11,3 +11,4 @@ Each assignment lives in its own folder, with a `README.md` explaining what I di
 
 - [day01](day01/) – Personal website with GitHub Pages
 - [day02](day02/) – GitHub issues, installing Python, and a "Hello World" program
+- [day03](day03/) – TPM normalization of RNA-seq read counts
