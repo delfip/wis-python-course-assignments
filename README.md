@@ -12,4 +12,4 @@ Each assignment lives in its own folder, with a `README.md` explaining what I di
 - [day01](day01/) – Personal website with GitHub Pages
 - [day02](day02/) – GitHub issues, installing Python, and a "Hello World" program
 - [day03](day03/) – TPM normalization of RNA-seq read counts
-- [day04](day04/) – Flask web interface for the TPM calculator
+- [day04](day04/) – Flask web interface for the TPM calculator, and tests for it (day 5 assignment)

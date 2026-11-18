@@ -53,6 +53,37 @@ If the data has a mistake (e.g. text instead of a number) the page shows an erro
 - Small example to check by hand – genes A (1000 bp) and B (2000 bp) with 100 reads each give
   TPM 666,666.7 and 333,333.3: same reads, but B is twice as long.
 
+## Tests (day 5 assignment)
+
+I added automated tests with [pytest](https://pytest.org/):
+
+- [test_tpm.py](test_tpm.py) – tests for the business logic:
+  - `compute_tpm`: the A/B example worked out by hand, the TPM always sums to 1,000,000,
+    genes with the same length are proportional to their counts, sequencing a sample deeper
+    gives the same TPM, a single gene gets 1,000,000, a 0 count gives 0 TPM, and all-zero
+    counts raise `ZeroDivisionError`.
+  - `parse_counts` / `read_counts`: reading genes, lengths and samples (in the right order),
+    a `ValueError` for text instead of a number, and the example `counts.csv` file
+    (including the IL6 value the web page shows).
+- [test_tpm_web.py](test_tpm_web.py) – tests for the web page using Flask's test client
+  (no real server needed): the page loads with the example data, calculating from pasted text
+  and from an uploaded file, and that bad or empty data shows an error message instead of crashing.
+
+Install pytest once and run the tests from the root of the repository:
+
+```
+pip install pytest
+python -m pytest day04 -v
+```
+
+Result: `17 passed`.
+
+To check that the tests really catch mistakes, I temporarily removed the gene-length
+correction from `compute_tpm` – 4 tests failed – and then put it back.
+
+Prompt: "Write pytest tests for the business logic of my day04 TPM program (compute_tpm,
+parse_counts, read_counts) and for the Flask web page, and put them in day04."
+
 ## Other changes
 
 - Added a `.gitignore` in the root of the repository so the `__pycache__` folder Python creates
